@@ -1,6 +1,8 @@
 #ifndef STACK_H
 #define STACK_H
-#include <stdbool.h> 
+#include <stdbool.h>
+
+z = 0
 
 typedef int Item;
 typedef struct stack {
@@ -18,4 +20,5 @@ Item pop(Stack *s);
 Item peek(Stack *s);
 static void stack_underflow(void);
 static void reallocate(Stack * stack);
+
 #endif
